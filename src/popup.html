@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+(c) 2014 Thomas Smits
+
+PopUp-HTML Page
+
+This page is displayed when the user clicks on the extension's
+icon. It is specified in the manifest.json file with the
+
+  "browser_action": "default_popup"
+
+property.
+
+Due to the security restrictions for extensions, inline JavaScript
+is not allowed. All JavaScript must be loaded from external files.
+Because of this, all event handlers are registered using jQuery.
+-->
+<html>
+<head>
+  <title>Passwortinator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/crypto-js/core.js"></script>
+  <script src="js/crypto-js/md5.js"></script>
+  <script src="js/crypto-js/enc-base64.js"></script>
+  <script src="js/crypto-js/sha1.js"></script>
+  <script src="js/crypto-js/hmac.js"></script>
+  <script src="js/crypto-js/pbkdf2.js"></script>
+  <script src="js/popup.js"></script>
+</head>
+<body>
+<body>
+<h1>The Magic Password Generator</h1>
+<table>
+  <tr>
+    <th>
+      <label for="password">Password</label>
+    </th>
+    <td>
+      <input type="password" id="password" autocomplete="off" size="30">
+    </td>
+  </tr>
+  <tr>
+    <th>
+      <label for="user">Account</label>
+    </th>
+    <td>
+      <input type="text" id="user" autocomplete="off" size="30">
+    </td>
+  </tr>
+  <tr>
+    <th>
+      <label for="site">Site</label>
+    </th>
+    <td>
+      <input type="text" id="site" size="30">
+    </td>
+  </tr>
+  <tr>
+    <th>
+      <label for="result">Result</label>
+    </th>
+    <td>
+      <input type="text" id="result" size="20"><br>
+    </td>
+  </tr>
+</table>
+<button id="submit">Calculate</button>
+</body>
+</html>

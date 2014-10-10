@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Passwortinator",
+    "version": "1.0",
+    "description": "Calculates strong passwords using a base password and information about the site and user.",
+    "icons": {
+        "128": "icon128.png",
+         "96": "icon96.png",
+         "72": "icon72.png",
+         "64": "icon64.png",
+         "48": "icon48.png",
+         "32": "icon32.png",
+         "24": "icon24.png",
+         "16": "icon16.png"
+
+    },
+    "permissions": ["http://*/", "https://*/", "tabs", "activeTab"],
+    "browser_action": {
+        "default_title": "Passwortinator",
+        "default_icon": "icon128.png",
+        "default_popup": "popup.html"
+    }
+}
