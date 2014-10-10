@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "Passwortinator",
+    "name": "Chrome Password Generator",
     "version": "1.0",
     "description": "Calculates strong passwords using a base password and information about the site and user.",
     "icons": {
